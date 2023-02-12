@@ -10,8 +10,6 @@ $(document).ready(function () {
 
     _restoreAllValues(infoArray);
 
-
-
     // deck area
     $('#deckAreaSqf').change(function () {
         _deckAreaCalculations();
@@ -22,11 +20,6 @@ $(document).ready(function () {
         _parapetCalculations();
 
     })
-
-
-
-
-
 
     // Total Roof Sqf to include parapets
     $('#parapetAreSqf').change(function () {

@@ -1,4 +1,9 @@
 <?php
+
+// Exit if accessed directly.
+if ( ! defined( 'ABSPATH' ) ) exit;
+
+
 // add top-level administrative menu
 function roof_calculator_add_toplevel_menu() {
 
@@ -14,13 +19,13 @@ int      $position = null
 )
 */
 
-add_menu_page(
+	add_menu_page(
 'Roof Calculator Settings',
 'Roof calculator',
 'manage_options',
 'roof-calculator',
-'roof_calculator_display_settings_page',
-'dashicons-admin-generic',
+'roofing_calculator_display_settings_page',
+'dashicons-admin-plugins',
 null
 );
 
