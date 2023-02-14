@@ -1,4 +1,6 @@
-<?php // MyPlugin - Settings Page
+<?php
+
+// MyPlugin - Settings Page
 
 
 
@@ -12,12 +14,12 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 
 // display the plugin settings page
-function  roofing_calculator_display_settings_page() {
+function  roof_calculator_display_settings_page() {
 
 	// check if user is allowed access
 	if ( ! current_user_can( 'manage_options' ) ) return;
 
-	?>
+?>
 
 	<div class="wrap">
 		<h1><?php echo esc_html( get_admin_page_title() ); ?></h1>
@@ -26,7 +28,7 @@ function  roofing_calculator_display_settings_page() {
 			<?php
 
 			// output security fields
-			settings_fields( 'roof_calculator_options' );
+			settings_fields( 'manage_options' );
 
 			// output setting sections
 			do_settings_sections( 'roof-calculator' );
@@ -38,9 +40,7 @@ function  roofing_calculator_display_settings_page() {
 
 		</form>
 	</div>
-
-	<?php
-
+<?php
 }
 
-
+?>

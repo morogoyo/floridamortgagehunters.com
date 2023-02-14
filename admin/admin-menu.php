@@ -24,7 +24,7 @@ int      $position = null
 'Roof calculator',
 'manage_options',
 'roof-calculator',
-'roofing_calculator_display_settings_page',
+'roof_calculator_display_settings_page',
 'dashicons-admin-plugins',
 null
 );
